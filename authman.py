@@ -1,0 +1,1 @@
+from authman import create_app
