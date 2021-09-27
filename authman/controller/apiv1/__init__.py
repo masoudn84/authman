@@ -1,0 +1,1 @@
+from authman.controller.apiv1.user import UserController
