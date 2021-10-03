@@ -7,7 +7,7 @@ class UserController:
 
     def get_user(user_id):
         return jsonify(status=501) # Not Implementedu.
-    
+
     def create_user():
         return jsonify(status=501) # Not Implementedu. 
 
