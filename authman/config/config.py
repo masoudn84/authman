@@ -11,6 +11,6 @@ class Config:
     SQLALCHEMY_QUERIES = DEBUG
     #======================USER CONFIGURATION================
     SQLALCHEMY_TRACK_MODIFICATIONS = DEBUG
-    USER_DEFAULT_TIME = int(environ.get("FANTOM_AUTHMAN_USER_DEFAULT_EXPIRY_TIME","365"))
     USER_DEFAULT_ROLE = environ.get("FANTOM_AUTHMAN_USER_DEFAULT_ROLE","member")
-    USER_DEFAULT_TIME = int(environ.get("FANTOM_AUTHMAN_USER_DEFAULT_STATUS","3")) #activate and enabled
+    USER_DEFAULT_EXPIRY_TIME = int(environ.get("FANTOM_AUTHMAN_USER_DEFAULT_EXPIRY_TIME","365"))
+    USER_DEFAULT_STATUS = int(environ.get("FANTOM_AUTHMAN_USER_DEFAULT_STATUS","3")) #activate and enabled
