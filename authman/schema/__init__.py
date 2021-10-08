@@ -1,0 +1,1 @@
+from authman.schema import apiv1
