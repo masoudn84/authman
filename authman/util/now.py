@@ -1,5 +1,5 @@
 from datetime import datetime
-from pytz import timezone, UTC 
+from pytz import timezone, utc
 from authman.config import Config
 
 def now(name=Config.TIMEZONE):
