@@ -16,5 +16,5 @@ class User(db.Model):
     last_active_at = db.Column(db.DateTime)
     last_change_at = db.Column(db.DateTime)
     failed_auth_at = db.Column(db.DateTime)
-    failed_auth_count = db.Column(db.Integer,nullable=False,default=3)
+    failed_auth_count = db.Column(db.Integer,nullable=False,default=0)
     status = db.Column(db.Integer,nullable=False,default=Config.USER_DEFAULT_STATUS)

@@ -9,6 +9,7 @@ class UserSchema(ma.SQLAlchemySchema):
     password = ma.auto_field(load_only=True)
     role = ma.auto_field()
     created_at = ma.auto_field(dump_only=True)
+    last_change_at = ma.auto_field(dump_only=True)
     expires_at = ma.auto_field(dump_only=True)
     last_active_at = ma.auto_field(dump_only=True)
     failed_auth_at = ma.auto_field(dump_only=True)
